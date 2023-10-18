@@ -53,4 +53,6 @@ When working with filenames, a leading dot is the prefix of a "hidden" file, a f
 **Password acquired= 2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe**
 
 ## Level 4 → Level 5
+![image](https://github.com/sapphire-clouds/OverTheWire-Bandit/assets/148193056/1e780a5a-c7f8-4cd9-9f4a-e02c4a584fe5)
 
+1. The asterisk (*) is a wildcard character in Unix-like systems that matches any sequence of characters. In the context of the used command (cat ./*) , * is used to match all files in the current directory.
