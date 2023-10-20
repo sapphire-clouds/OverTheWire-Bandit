@@ -68,5 +68,21 @@ When working with filenames, a leading dot is the prefix of a "hidden" file, a f
 
 ## Level 7 → Level 8
 
+![image](https://github.com/sapphire-clouds/OverTheWire-Bandit/assets/148193056/01ad3351-55ed-4292-9621-a9b9444cd270)
 
+1. awk '/millionth/ {print $2}': awk command searches for lines that contain the word "millionth" and then prints the second field (word) after it, which should be the password.
+2. strings: This command extracts printable character sequences from the file.
+3. grep "millionth": This command searches the output of strings for the word "millionth" and displays the line containing it, which should include the password.
+   
+**Password acquired= TESKZC0XvTetK0S9xNwm25STk5iWrBvP**
     
+## Level 8 → Level 9
+![image](https://github.com/sapphire-clouds/OverTheWire-Bandit/assets/148193056/d78f3dec-1857-4887-b646-73deb8df1eac)
+
+1. sort: This command sorts the lines in the file.
+2. uniq -u: uniq when used with the -u option, displays only unique lines, meaning lines that occur only once
+   
+**Password acquired= EN632PlfYiZbn3PhVK3XOGSlNInNE00t**
+
+## Level 9 → Level 10
+
