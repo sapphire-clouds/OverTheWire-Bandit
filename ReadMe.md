@@ -85,4 +85,9 @@ When working with filenames, a leading dot is the prefix of a "hidden" file, a f
 **Password acquired= EN632PlfYiZbn3PhVK3XOGSlNInNE00t**
 
 ## Level 9 → Level 10
+![image](https://github.com/sapphire-clouds/OverTheWire-Bandit/assets/148193056/64269160-84c6-4b4a-8c32-c3b5685b2347)
+
+**Password acquired= G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s**
+
+
 
