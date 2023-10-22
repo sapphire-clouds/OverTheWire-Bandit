@@ -97,4 +97,11 @@ When working with filenames, a leading dot is the prefix of a "hidden" file, a f
 
 ## Level 11 → Level 12
 
+![image](https://github.com/sapphire-clouds/OverTheWire-Bandit/assets/148193056/2f606f64-484d-49eb-b790-4018d5a5738c)
+
+1. tr= short for "translate," is a basic Unix utility that is used to translate or delete characters in a text
+    
+**Password acquired= JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv**
+
+## Level 12 → Level 13
 
