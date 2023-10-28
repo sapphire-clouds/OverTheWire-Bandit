@@ -219,8 +219,117 @@ The password is wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
 
 **Password acquired= wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw**
 
+## Level 13 → Level 14
+
+<pre>
+ bandit13@bandit:~$ ls -la
+total 24
+drwxr-xr-x  2 root     root     4096 Oct  5 06:19 .
+drwxr-xr-x 70 root     root     4096 Oct  5 06:20 ..
+-rw-r--r--  1 root     root      220 Jan  6  2022 .bash_logout
+-rw-r--r--  1 root     root     3771 Jan  6  2022 .bashrc
+-rw-r--r--  1 root     root      807 Jan  6  2022 .profile
+-rw-r-----  1 bandit14 bandit13 1679 Oct  5 06:19 sshkey.private
+bandit13@bandit:~$ ssh -i sshkey.private bandit14@localhost
+The authenticity of host 'localhost (127.0.0.1)' can't be established.
+ED25519 key fingerprint is SHA256:C2ihUBV7ihnV1wUXRb4RrEcLfXC5CXlhmAAM/urerLY.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Could not create directory '/home/bandit13/.ssh' (Permission denied).
+Failed to add the host to the list of known hosts (/home/bandit13/.ssh/known_hosts).
+
+                      This is an OverTheWire game server. 
+            More information on http://www.overthewire.org/wargames
+
+!!! You are trying to log into this SSH server on port 22, which is not intended.
+
+bandit14@localhost: Permission denied (publickey).
+</pre>
+
+didn't specify the specific port hence the error 
+
+<pre>
+bandit13@bandit:~$ ssh -i sshkey.private -p 2220 bandit14@localhost
+The authenticity of host '[localhost]:2220 ([127.0.0.1]:2220)' can't be established.
+ED25519 key fingerprint is SHA256:C2ihUBV7ihnV1wUXRb4RrEcLfXC5CXlhmAAM/urerLY.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Could not create directory '/home/bandit13/.ssh' (Permission denied).
+Failed to add the host to the list of known hosts (/home/bandit13/.ssh/known_hosts).
+
+ 
+bandit14@bandit:~$ cat /etc/bandit_pass/bandit14
+fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
+</pre>
+
+### Summary
+<pre>
+bandit13@bandit:~$ ssh -i sshkey.private -p 2220 bandit14@localhost
+
+bandit14@bandit:~$ cat /etc/bandit_pass/bandit14
+fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
+</pre>
+
+1. ssh= used to OpenSSH remote login client
+2. -i= Selects a file from which the identity (private key) for public key authentication is read.
+3. -p= Port to connect to on the remote host
 
 
+**Password acquired= fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq**
 
+## Level 14 → Level 15
 
+<pre>
+bandit14@bandit:~$ echo fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq | nc localhost 30000
+Correct!
+jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
+</pre>
 
+1. echo - display a line of text
+2. nc (netcat)= reads and writes data across networks from the command line.
+
+**Password acquired= jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt**
+
+## Level 15 → Level 16
+
+<pre>
+bandit15@bandit:~$ echo jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt | openssl s_client -connect localhost:30001 -quiet
+Can't use SSL_get_servername
+depth=0 CN = localhost
+verify error:num=18:self-signed certificate
+verify return:1
+depth=0 CN = localhost
+verify error:num=10:certificate has expired
+notAfter=Oct 28 09:39:22 2023 GMT
+verify return:1
+depth=0 CN = localhost
+notAfter=Oct 28 09:39:22 2023 GMT
+verify return:1
+Correct!
+JQttfApK4SeyHwDlI9SXGR50qclOAil1
+</pre>
+
+1. openssl s_client: This command is part of the OpenSSL toolkit and is used to connect to SSL/TLS-encrypted services. It's commonly used for establishing secure connections to remote servers.
+2. -connect: This part of the command specifies the target server and port to connect to.
+3. -quiet: The -quiet option is used to suppress unnecessary output from the openssl s_client command.
+
+**Password acquired= JQttfApK4SeyHwDlI9SXGR50qclOAil1**
+
+## Level 16 → Level 17
+ 1. Searching for ports that have a server listening on them
+
+<pre>
+bandit16@bandit:~$ nmap -p 31000-32000 localhost
+Starting Nmap 7.80 ( https://nmap.org ) at 2023-10-28 16:55 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.00015s latency).
+Not shown: 996 closed ports
+PORT      STATE SERVICE
+31046/tcp open  unknown
+31518/tcp open  unknown
+31691/tcp open  unknown
+31790/tcp open  unknown
+31960/tcp open  unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 0.23 seconds
+</pre>
