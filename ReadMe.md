@@ -5,6 +5,9 @@ Connected to bandit.labs.overthewire.org
 
 ![image](https://github.com/sapphire-clouds/OverTheWire-Bandit/assets/148193056/97234e2a-c943-4808-b010-8175a35893a6)
 
+![image](https://github.com/sapphire-clouds/OverTheWire-Bandit/assets/148193056/024375b4-f48d-4252-979e-79dbe0bfdc0a)
+
+
 
 ## Level 0 → Level 1
 ![image](https://github.com/sapphire-clouds/OverTheWire-Bandit/assets/148193056/5f734bcf-d0ec-4d5b-b708-abf329e5a1e9)
