@@ -471,3 +471,13 @@ vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
 
 ## Level 17
 
+<pre>
+ bandit17@bandit:~$ diff passwords.old passwords.new
+42c42
+< p6ggwdNHncnmCNxuAt0KtKVq185ZU7AW
+---
+> hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg
+bandit17@bandit:~$ 
+</pre>
+
+## 
