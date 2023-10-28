@@ -474,7 +474,7 @@ vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
 -----END RSA PRIVATE KEY-----" | ssh -i - bandit17@bandit.labs.overthewire.org -p 2220
 </pre>
 
-## Level 17
+## Level 17 → Level 18
 
 <pre>
  bandit17@bandit:~$ diff passwords.old passwords.new
@@ -485,4 +485,9 @@ vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
 bandit17@bandit:~$ 
 </pre>
 
-## 
+1. The diff command will compare 2 files line by line and show you the differences
+
+**Password acquired= hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg**
+
+## Level 18 → Level 19
+
