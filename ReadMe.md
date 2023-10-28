@@ -494,3 +494,7 @@ bandit17@bandit:~$
 ![image](https://github.com/sapphire-clouds/OverTheWire-Bandit/assets/148193056/82219949-3a88-40c3-8447-957c2449e866)
 
 **Password acquired= awhqfNnAbc1naukrpqDYcF95h7HoMTrC**
+
+## Level 19 → Level 20
+
+## Level 20 → Level 21
