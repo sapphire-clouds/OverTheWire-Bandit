@@ -497,4 +497,62 @@ bandit17@bandit:~$
 
 ## Level 19 → Level 20
 
+<pre>
+bandit19@bandit:~$ ls
+bandit20-do
+bandit19@bandit:~$ ./bandit20-do
+Run a command as another user.
+  Example: ./bandit20-do id
+bandit19@bandit:~$ ./bandit20-do id
+uid=11019(bandit19) gid=11019(bandit19) euid=11020(bandit20) groups=11019(bandit19
+ 
+bandit19@bandit:~$ cd /etc/bandit_pass/
+bandit19@bandit:/etc/bandit_pass$ ls
+bandit0   bandit11  bandit14  bandit17  bandit2   bandit22  bandit25  bandit28  bandit30  bandit33  bandit6  bandit9
+bandit1   bandit12  bandit15  bandit18  bandit20  bandit23  bandit26  bandit29  bandit31  bandit4   bandit7
+bandit10  bandit13  bandit16  bandit19  bandit21  bandit24  bandit27  bandit3   bandit32  bandit5   bandit8
+
+bandit19@bandit:/etc/bandit_pass$ file *
+bandit0:  regular file, no read permission
+bandit1:  regular file, no read permission
+bandit10: regular file, no read permission
+bandit11: regular file, no read permission
+bandit12: regular file, no read permission
+bandit13: regular file, no read permission
+bandit14: regular file, no read permission
+bandit15: regular file, no read permission
+bandit16: regular file, no read permission
+bandit17: regular file, no read permission
+bandit18: regular file, no read permission
+bandit19: ASCII text
+bandit2:  regular file, no read permission
+bandit20: regular file, no read permission
+bandit21: regular file, no read permission
+bandit22: regular file, no read permission
+bandit23: regular file, no read permission
+bandit24: regular file, no read permission
+bandit25: regular file, no read permission
+bandit26: regular file, no read permission
+bandit27: regular file, no read permission
+bandit28: regular file, no read permission
+bandit29: regular file, no read permission
+bandit3:  regular file, no read permission
+bandit30: regular file, no read permission
+bandit31: regular file, no read permission
+bandit32: regular file, no read permission
+bandit33: regular file, no read permission
+bandit4:  regular file, no read permission
+bandit5:  regular file, no read permission
+bandit6:  regular file, no read permission
+bandit7:  regular file, no read permission
+bandit8:  regular file, no read permission
+bandit9:  regular file, no read permission
+bandit19@bandit:/etc/bandit_pass$ cat bandit19
+awhqfNnAbc1naukrpqDYcF95h7HoMTrC
+</pre>
+
+![image](https://github.com/sapphire-clouds/OverTheWire-Bandit/assets/148193056/6d9de6db-76e3-4e8a-b23a-a0300349312c)
+
+**Password acquired= awhqfNnAbc1naukrpqDYcF95h7HoMTrC**
+
 ## Level 20 → Level 21
