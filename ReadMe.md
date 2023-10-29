@@ -503,7 +503,7 @@ bandit17@bandit:~$
 
 ## Level 20 → Level 21
 
-![image](https://github.com/sapphire-clouds/OverTheWire-Bandit/assets/148193056/27dcff61-abbd-4fdf-a3eb-e26b18096497)
+![image](https://github.com/sapphire-clouds/OverTheWire-Bandit/assets/148193056/c71eba23-4b30-4afb-b8b7-7c15f43648c0)
 
-**Password acquired=**
+**Password acquired=NvEJF7oVjkddltPSrdKEFOllh9V1IBcq**
 
